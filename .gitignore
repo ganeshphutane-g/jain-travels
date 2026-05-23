@@ -1,0 +1,4 @@
+.DS_Store
+.cursor/
+*.plan.md
+node_modules/

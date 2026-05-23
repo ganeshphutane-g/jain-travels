@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jain Travels — Project Report</title>
+  <style>
+  @page { margin: 2cm; }
+  body { font-family: Georgia, "Times New Roman", serif; line-height: 1.6; color: #222; max-width: 800px; margin: 0 auto; padding: 2rem; }
+  h1 { color: #0d4f6b; font-size: 2rem; border-bottom: 3px solid #0d4f6b; padding-bottom: 0.5rem; page-break-after: avoid; }
+  h2 { color: #0d4f6b; font-size: 1.35rem; margin-top: 2rem; page-break-after: avoid; }
+  h3 { font-size: 1.1rem; margin-top: 1.25rem; }
+  .cover { text-align: center; padding: 4rem 0; page-break-after: always; }
+  .cover h1 { border: none; font-size: 2.4rem; }
+  .cover p { font-size: 1.1rem; color: #444; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  th, td { border: 1px solid #ccc; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #e8f4f6; color: #0d4f6b; }
+  ul { margin: 0.5rem 0 1rem 1.25rem; }
+  li { margin-bottom: 0.35rem; }
+  .credentials { background: #f5f7fa; border: 2px solid #0d4f6b; padding: 1rem 1.25rem; margin: 1rem 0; border-radius: 8px; }
+  .credentials strong { color: #0d4f6b; }
+  .page-break { page-break-before: always; }
+  code { background: #f0f0f0; padding: 0.1rem 0.35rem; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <h1>Jain Travels</h1>
+    <p><strong>Travel Booking Website — Project Report</strong></p>
+    <p>Student Name: _________________________</p>
+    <p>Date: May 23, 2026</p>
+    <p>Course: Web Development</p>
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>Jain Travels is a responsive travel booking website designed to help users explore destinations, view travel packages, book trips, and learn about company services. The project demonstrates proficiency in HTML5, CSS3, and JavaScript through a fully functional static website deployed on GitHub Pages.</p>
+  <p>The website provides an intuitive user interface with navigation, hero banner, booking form, package gallery, services section, photo gallery, about us section, footer, and user authentication (login and register pages).</p>
+
+  <h2>2. Objectives</h2>
+  <ul>
+    <li>Design a professional travel agency website with modern UI</li>
+    <li>Implement interactive features using JavaScript (country rotation, form validation)</li>
+    <li>Create user registration and login with client-side validation</li>
+    <li>Deploy the website on GitHub Pages for public access</li>
+  </ul>
+
+  <h2>3. Technologies Used</h2>
+  <table>
+    <tr><th>Technology</th><th>Purpose</th></tr>
+    <tr><td>HTML5</td><td>Page structure and semantic markup</td></tr>
+    <tr><td>CSS3</td><td>Layout, styling, responsive design, hover effects</td></tr>
+    <tr><td>JavaScript</td><td>Form validation, auth, dynamic content</td></tr>
+    <tr><td>localStorage</td><td>User registration and login data storage</td></tr>
+    <tr><td>GitHub Pages</td><td>Free static site hosting</td></tr>
+    <tr><td>Google Fonts (Poppins)</td><td>Typography</td></tr>
+    <tr><td>Unsplash</td><td>Travel photography</td></tr>
+  </table>
+
+  <h2 class="page-break">4. Page-wise Description</h2>
+
+  <h3>4.1 Home Page (index.html)</h3>
+  <ul>
+    <li><strong>Navigation Bar:</strong> Brand logo and name (Jain Travels), menu links (Home, Book, Packages with dropdown, Services, Gallery, About), Login and Register buttons</li>
+    <li><strong>Hero Section:</strong> Full-width background image (90vh), welcome heading, rotating country names every 0.2 seconds, Book Now button</li>
+    <li><strong>Booking Section:</strong> 50/50 layout — brand image and booking form (Where to, Persons, Start/End dates, Description 50–500 chars)</li>
+    <li><strong>Package Gallery:</strong> 9 destination cards in 3×3 grid with image, name, attractions, USD price, rating, Book Now</li>
+    <li><strong>Services:</strong> 6 service cards (Affordable Hotel, Food &amp; Drinks, Safety Guide, Airport Transfer, 24/7 Support, Custom Itinerary)</li>
+    <li><strong>Travel Gallery:</strong> 12 photos with CSS <code>transform: scale(1.1)</code> on hover</li>
+    <li><strong>About Us:</strong> 50/50 layout with team image and company information (Established 2010)</li>
+    <li><strong>Footer:</strong> Brand name, social media icons (Facebook, Instagram, Twitter, LinkedIn), copyright</li>
+  </ul>
+
+  <h3>4.2 Register Page (register.html)</h3>
+  <p>Registration form with fields: Full Name, Contact, Date of Birth, Email ID, Password, Gender (Male/Female/Other), and Register button. Link below redirects to login page. JavaScript validates all fields before saving user to localStorage.</p>
+
+  <h3>4.3 Login Page (login.html)</h3>
+  <p>Login form with Email ID and Password fields. Link below redirects to register page. Validates credentials against localStorage and redirects to home on success.</p>
+
+  <h2>5. Key Features Implemented</h2>
+  <ul>
+    <li>Packages dropdown menu on hover (United State, India, France, Germany)</li>
+    <li>Automatic country name rotation in hero section</li>
+    <li>Booking form validation with date and description rules</li>
+    <li>Gallery image hover scale effect</li>
+    <li>Responsive layout for tablet and mobile</li>
+    <li>Register validation: name, 10-digit contact, age 18+, email format, password strength, gender selection</li>
+    <li>Login validation with success/failure messages</li>
+    <li>Pre-seeded evaluator account for grading</li>
+  </ul>
+
+  <h2 class="page-break">6. Deployment Details</h2>
+  <p>The website is deployed on <strong>GitHub Pages</strong> as a static site. All HTML, CSS, and JavaScript files are pushed to the repository root and served directly.</p>
+
+  <div class="credentials">
+    <h3 style="margin-top:0;">Deployed Website Link</h3>
+    <p><strong>URL:</strong> <span id="deploy-url">https://YOUR_GITHUB_USERNAME.github.io/jain-travels/</span></p>
+    <p><em>Update this URL with your actual GitHub Pages link after deployment.</em></p>
+
+    <h3>Evaluator Login Credentials</h3>
+    <table>
+      <tr><th>Field</th><th>Value</th></tr>
+      <tr><td>Email ID</td><td><code>evaluator@jaintravels.com</code></td></tr>
+      <tr><td>Password</td><td><code>JainTravels@123</code></td></tr>
+    </table>
+    <p>To test: Open the deployed site → click <strong>Login</strong> → enter the credentials above → click Login.</p>
+  </div>
+
+  <h2>7. File Structure</h2>
+  <table>
+    <tr><th>File</th><th>Description</th></tr>
+    <tr><td>index.html</td><td>Main home page</td></tr>
+    <tr><td>login.html</td><td>Login page</td></tr>
+    <tr><td>register.html</td><td>Registration page</td></tr>
+    <tr><td>styles.css</td><td>Main stylesheet</td></tr>
+    <tr><td>auth.css</td><td>Auth page styles</td></tr>
+    <tr><td>script.js</td><td>Home page JavaScript</td></tr>
+    <tr><td>auth.js</td><td>Authentication JavaScript</td></tr>
+    <tr><td>README.md</td><td>Project documentation</td></tr>
+  </table>
+
+  <h2>8. Conclusion</h2>
+  <p>The Jain Travels project successfully implements a complete travel booking website with modern design, interactive features, form validation, user authentication, and live deployment. The project demonstrates practical skills in front-end web development including layout design, CSS animations, JavaScript logic, and static site deployment.</p>
+
+  <h2>9. References</h2>
+  <ul>
+    <li>Images: <a href="https://unsplash.com">https://unsplash.com</a></li>
+    <li>Fonts: <a href="https://fonts.google.com/specimen/Poppins">Google Fonts — Poppins</a></li>
+    <li>Hosting: <a href="https://pages.github.com">GitHub Pages</a></li>
+  </ul>
+
+</body>
+</html>
