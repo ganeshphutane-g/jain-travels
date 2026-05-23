@@ -4,9 +4,7 @@ Static travel booking website built with HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-**Deployed URL:** https://YOUR_GITHUB_USERNAME.github.io/jain-travels/
-
-*(Replace with your actual GitHub Pages URL after deployment.)*
+**Deployed URL:** https://ganeshphutane-g.github.io/jain-travels/
 
 ## Evaluator Login Credentials
 
